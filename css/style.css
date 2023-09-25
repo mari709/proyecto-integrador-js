@@ -1,3 +1,5 @@
+/*estilos de normalizacion, header y footer */
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap');
 :root {
     /*palette*/
@@ -19,6 +21,7 @@
     --dark-bg-solid: #30343F;
     --light-bg-solid: #FAFAFA;
     --light-font-solid: #FFFFFF;
+    --light-bg-container: #FAFAFF;
 
     /*Typography*/
     --base-font: 'Inter', sans-serif;
