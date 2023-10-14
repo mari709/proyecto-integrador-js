@@ -155,7 +155,22 @@ p {
   color: #fd0404; /* Cambia el color al pasar el mouse */
 }
 
+/* Media query para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+  .navbar {
+    grid-template-columns: 1fr; 
+    text-align: center; 
+  }
 
+  .nav-items {
+    flex-direction: column; 
+  }
+
+  .nav-item {
+    margin-right: 0; 
+    margin-bottom: 10px; 
+  }
+}
 /*Estilos card item-producto*/
 
 .BabyYoda11 {
