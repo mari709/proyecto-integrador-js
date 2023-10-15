@@ -412,3 +412,7 @@ a {
   line-height: normal;
 
 }
+
+.nabvar__logo {
+  max-width: 300px;
+}
