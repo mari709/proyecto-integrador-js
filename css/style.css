@@ -97,6 +97,11 @@ p {
   float: left; /* Logotipo en la parte izquierda */
 }
 
+picture img {
+  width: 100%;
+  height: auto;
+}
+
 /* Estilo para el contenedor de la barra de navegación */
 .navbar {
   display: grid; /* Utiliza Grid Layout */
