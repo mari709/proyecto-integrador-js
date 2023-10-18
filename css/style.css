@@ -416,3 +416,21 @@ a {
   line-height: normal;
 
 }
+/* estilos pie de pagina */
+.footer {
+  background-color: var(--dark-bg-solid);
+  padding: var(--spacing-68);
+}
+
+.footer__copy {
+  margin-top: var(--spacing-36);
+  text-align: center;
+}
+
+a.navbar__link {
+  color: #FAFAFA;
+  text-transform: uppercase;
+}
+.logo-ft {
+  width: 60%;
+}
