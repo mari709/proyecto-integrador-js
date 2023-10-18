@@ -97,11 +97,6 @@ p {
   float: left; /* Logotipo en la parte izquierda */
 }
 
-picture img {
-  width: 100%;
-  height: auto;
-}
-
 /* Estilo para el contenedor de la barra de navegación */
 .navbar {
   display: grid; /* Utiliza Grid Layout */
@@ -175,6 +170,10 @@ picture img {
     margin-right: 0; 
     margin-bottom: 10px; 
   }
+  picture img {
+  width: 100%;
+  height: auto;
+}
 }
 /*Estilos card item-producto*/
 
