@@ -3,48 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShopFUNKOSHOP</title>
-    <link rel="stylesheet" href="./css/index.css">
+    <title>Shop - FUNKOSHOP</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style-shop.css">
     <script src="https://kit.fontawesome.com/1efe046873.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar container">
-          <div class="logo">
-            <a href="./index.html">
-              <img src="./img/branding/logo_light_horizontal.svg" alt="Logotipo branding funkoshop" />
-            </a>
-          </div>
-      
-          <div class="nav-items">
-            <div class="nav-item">
-              <a href="./shop.html">SHOP</a>
-            </div>
-            <div class="nav-item">
-              <i class="fa-solid fa-chevron-down"></i>
-            </div>
-            <div class="nav-item">
-              <a href="./contacto.html">CONTACTO</a>
-            </div>
-            <div class="nav-item">
-              <a href="./login.html">INGRESAR</a>
-            </div>
-            <div class="nav-item">
-              <a href="./carrito.html"><img src="./img/icons/cart-icon.svg"
-                alt="carrito" ></a>
-            </div>
-          </div>
-        </nav>
-      </header>
+  <header class="header">
+    <nav class="navbar container">
+      <div class="logo">
+        <a href="./index.html">
+          <picture>
+            <img src="./img/branding/logo_light_horizontal.svg" alt="Logotipo branding funkoshop" />
+          </picture>
+        </a>
+      </div>
+  
+      <div class="nav-items">
+        <div class="nav-item">
+          <a href="./shop.html">SHOP</a>
+        </div>
+        <div class="nav-item">
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="nav-item">
+          <a href="./contacto.html">CONTACTO</a>
+        </div>
+        <div class="nav-item">
+          <a href="./login.html">INGRESAR</a>
+        </div>
+        <div class="nav-item">
+          <a href="./carrito.html"><img src="./img/icons/cart-icon.svg"
+            alt="carrito" ></a>
+        </div>
+      </div>
+    </nav>
+  </header>
       <main class="hero container" >
+
+        <!-- SECCION BUSCAR  -->
         <section class="hero_buscar">
-              <h3>BUSCAR</h3>
+              <h3 class="hero__titulos">BUSCAR</h3>
               <form>
                 <input type="text" placeholder="item o categoria">
               </form>
         </section>
+
+        <!-- SECCION ORDENAR  -->
         <section class="hero_ordenar">
-              <h3>ORDENAR POR</h3>
+              <h3 class="hero__titulos">ORDENAR POR</h3>
               <form>
                 <select name="formulario" id="formulario">
                     <option value="mayor a menor"> Mayor a menor</option>
@@ -52,25 +59,24 @@
                 </select>
               </form>
         </section>
+
+        <!-- SECCION PRECIO  -->
         <section class="hero__valor">
-              <h3 class="hero__precio">PRECIO</h3>
-            </section>
-        <section class="hero__ambos">  
-              <h5 class="hero__min">MIN  
-                <form>
-                <input type="text" placeholder="0">
-              </form>
-              </h5>
-            <P class="hero__guion">-</P>
-            <h5 class="hero__max">MAX  
-                <form>
-                <input type="text" placeholder="0">
-              </form>
-            </h5>
-    
+          <h3 class="hero__titulos">PRECIO</h3>
+          
+          <label for="precio__min">MIN</label>
+          <input type="number" id="precio__min" name="precio__min" placeholder="0" min="0">
+
+          <span class="hero__guion">-</span>
+
+          <label for="precio__max">MAX</label>
+          <input type="number" id="precio__max" name="precio__max" placeholder="0">
+
         </section>
+
+        <!-- SECCION FILTROS  -->
         <section class="hero_filtrar">
-              <h3>FILTRAR</h3>
+              <h3 class="hero__titulos">FILTRAR</h3>
               <form>
                 <label for="NUEVOS">
                     <input id="NUEVOS" type="checkbox" value="NUEVOS">NUEVOS
@@ -174,22 +180,18 @@
         <P>3 CUOTAS SIN INTERÉS</P>
     </section>
             </main>
-                    <footer>
-                <section>
-                    <nav>
-                        <ul>
-                            <li><a href="./pages/shop.html"></a>SHOP</li>
-                            <li><a href="./pages/registrarse.html"></a>REGISTRARSE</li>
-                            <li><a href="./pages/ingresar.html"></a>INGRESAR</li>
-                            <li><a href="./pages/contacto.html"></a>CONTACTO</li>
-                        </ul>
-                        <picture>
-                            <img src="./img/branding/isotype.svg" alt="isotipo de la marca funkoshop">
-                        </picture>
-                    </nav>
-                   </section>
-                   <p>All rights reserved 2023 - Funkoshop &copy;</p>
-            </footer>
+            <footer class="footer">
+              <nav class="navbar container">
+                  <ul class="navbar__item">
+                      <li class="navbar__item"><a class="navbar__link" href="./pages/productos.html">Productos</a></li>
+                      <li class="navbar__item"><a class="navbar__link" href="./pages/registro.html">Registrarse</a></li>
+                      <li class="navbar__item"><a class="navbar__link" href="./pages/login.html">Iniciar Sesión</a></li>
+                      <li class="navbar__item"><a class="navbar__link" href=""></a></li>
+                  </ul>
+                  <picture><img class="logo-ft" src="./img/branding/isotype.svg" alt="isotipo Funkoshop"></picture>
+              </nav>
+              <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
+          </footer>
             <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
     </body>
     </html>
