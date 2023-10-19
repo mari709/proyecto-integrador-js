@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/style-carrito.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/style-carrito.css">
     <script src="https://kit.fontawesome.com/1efe046873.js" crossorigin="anonymous"></script>
-
     <title>Carrito - Funkoshop</title>
 </head>
 <body>
-  <!--css de header de item.html-->
   <header class="header">
     <nav class="navbar container">
       <div class="logo">
         <a href="./index.html">
-          <img class="nabvar__logo" src="./img/branding/logo_light_horizontal.svg" alt="Logotipo branding funkoshop" />
+          <picture>
+            <img class="nabvar__logo" src="./img/branding/logo_light_horizontal.svg" alt="Logotipo branding funkoshop" />
+          </picture>
         </a>
       </div>
   
@@ -105,27 +105,18 @@
         </section>
     </main>
     <!-- footer -->
-    <footer class="footer container">
-        <!--Aqui van los datos del sitio-->
-        <section>
-          <nav>
-
-          
-        <ul class="links container" style="list-style-type: none;">
-          <li><a href="" class="link item">SHOP</a></li>
-          <li><a href="" class="link item">INGRESAR</a></li>
-          <li><a href="" class="link item">CONTACTO</a></li>
-        </ul>
-        
-        <div class="logo container">
-          <img src="" alt="" />
-        
+    <footer class="footer">
+      <nav class="navbar container">
+          <ul class="navbar__item">
+              <li class="navbar__item"><a class="navbar__link" href="./pages/productos.html">Productos</a></li>
+              <li class="navbar__item"><a class="navbar__link" href="./pages/registro.html">Registrarse</a></li>
+              <li class="navbar__item"><a class="navbar__link" href="./pages/login.html">Iniciar Sesión</a></li>
+              <li class="navbar__item"><a class="navbar__link" href=""></a></li>
+          </ul>
+          <picture><img class="logo-ft" src="./img/branding/isotype.svg" alt="isotipo Funkoshop"></picture>
       </nav>
-      </section>
-      <section class="bottom-line container">
-        <p>All rights reserved 2023 - Funkoshop</p>
-      </section >
-      </footer>
+      <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
+  </footer>
 </body>
 </html>
 
