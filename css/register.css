@@ -1,0 +1,275 @@
+/*Fuentes importadas Inter y Raleway*/
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&display=swap');
+
+/*definiciones de variables */
+
+:root{
+    /*Colores*/
+    --primary-solid: #FF3333;
+    --primary-900: rgba(255, 51, 51, 0.9);
+    --primary-500: rgba(255, 51, 51, 0.5);
+    --primary-300: rgba(255, 51, 51, 0.3);
+
+    --secondary-solid: #1D84B5;
+    --secondary-900:rgba(29, 132, 181, 0.9);
+    --secondary-500:rgba(29, 132, 181, 0.5);
+    --secondary-300:rgba(29, 132, 181, 0.3);
+
+    --dark-solid: #1F1F1F;
+    --dark-900:rgba(31, 31, 31, 0.9);
+    --dark-500:rgba(31, 31, 31, 0.5);;
+    --dark-300:rgba(31, 31, 31, 0.3);;
+
+    --pitch-black: #111111;
+
+    --dark-bg-solid: #30343F;
+    --light-bg-solid: #FAFAFF;
+    --light-font-solid: #FFFFFF;
+
+    /*Tipografia*/
+    --base-font: 'Inter', sans-serif;
+    --alternative-font: 'Raleway', sans-serif;
+
+    /*Tamaños de fuentes*/
+    --font-display: 4.6em;
+    --font-jumbo:3.8em;
+    --font-xlarge:3em;
+    --font-large:2.4em;
+    --font-medium:1.8em;
+    --font-small:1.6em;
+    --font-xsmall:1.4em;
+
+    /*Espaciado (margenes) */
+    --spacing-128:12.8rem;
+    --spacing-68:6.8rem;
+    --spacing-36:3.6rem;
+    --spacing-28:2.8rem;
+    --spacing-24:2.4rem;
+    --spacing-20:2rem;
+    --spacing-16:1.6rem;
+    --spacing-12:1.2rem;
+    --spacing-8:0.8rem;
+
+
+}
+
+*,
+*::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*definiciones comunes*/
+html{
+    font-family: var(--base-font);
+    font-size: 62.5%;
+    color: var(--dark-solid);
+}
+a{
+    text-decoration: none;
+    color:inherit;
+    font-family: inherit;
+}
+header,
+footer{
+    font-family: var(--alternative-solid);
+    color: var(--light-font-solid);
+}
+
+ul,ol{
+    list-style-type: none;
+}
+
+p{
+    font-size: 1.8em;
+}
+img{
+    width: 100%;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*HEADER*/
+
+header{
+    background-color: var(--dark-bg-solid);
+    padding: var(--spacing-36);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar_logo{
+    max-width: 300px;
+}
+
+.navbar_menu{
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-20);
+}
+
+.navbar_item{
+    display: flex;
+}
+
+.navbar_link{
+    font-size: var(--font-medium);
+    padding: var(--spacing-8) var(--spacing-16);
+    display: inline-block;
+    transition: background .3s ease-in-out;
+    color: var(--light-font-solid);
+    position: relative;
+}
+
+.navbar_link:hover{
+    background-color: var(--primary-900);
+}
+
+.with-icon{
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-8);
+}
+
+.with-submenu:hover .submenu{
+    display:block;
+}
+
+.submenu{
+    display: none;
+    position: absolute;
+    background-color: var(--dark-bg-solid);
+    width: 300px;
+}
+
+.submenu_link{
+    display: block;
+    padding: var(--spacing-8) var(--spacing-16);
+    font-size: var(--font-medium);
+    transition: background .3s ease-in-out;
+}
+
+.submenu_link:hover{
+    background-color: var(--primary-900);
+}
+
+/*Footer*/
+.footer {
+    background-color: var(--dark-bg-solid);
+    padding: var(--spacing-20);
+    justify-content: space-between;
+}
+
+
+.footer_copy{
+    background-color: var(--dark-bg-solid);
+    padding: var(--spacing-20);
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+}
+
+
+/*---------------Estilo para registro--------------*/
+
+table, th, td {
+    border: 0px none;
+    font-size: 24px;
+    padding: var(--spacing-8);
+  } /*Tabla para posicion forzada de campos*/
+
+  /*estilo de intputs (menos boton)*/
+input[type=text]{
+    border: 0px none black;
+    border-bottom: 2px solid var(--primary-solid);
+}
+
+  input[type=email]{
+    border: 0px none black;
+    border-bottom: 2px solid var(--primary-solid);
+  }
+  input[type=password]{
+    border: 0px none black;
+    border-bottom: 2px solid var(--primary-solid);
+  }
+
+/*estilo del formulario*/
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    font: var(--alternative-font);
+}
+
+.formulario h1{
+    display: flex;
+    justify-content: center;
+    padding: var(--spacing-12);
+    font: inherit;
+    font-weight: 700;
+    font-size: 42px;
+}
+
+.formulario, h3{
+    display: flex;
+    justify-content: center;
+    font: inherit;
+    font-size: 32px;
+    padding: var(--spacing-12);
+    font-weight: 500;
+    
+}
+
+.formulario_planilla{
+    display: inline-block;
+    justify-content: center;
+    flex-direction: column;
+    font: inherit;
+    margin: auto; /*para que tome el tamaño de la tabla*/
+}
+
+ /* estilo para ultima linea del formulario*/
+.formulario_send{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: var(--spacing-12);
+}
+
+.formulario_send a{
+    font-size: 18px;
+    font-family: inherit;
+    text-decoration: none;
+    color: #1D84B5;
+}
+
+.formulario_send p{
+    font:inherit;
+    font-size: 18px;
+    margin: 4px; /*separacion forzada*/
+}
+
+.formulario_send div{
+    display: flex;
+    align-items: center;
+}
+
+#register-btn{
+    background-color: var(--primary-solid);
+    padding: var(--spacing-12);
+    color: var(--light-font-solid);
+    border: none;
+}
+
+/*final estilo de registro*/
