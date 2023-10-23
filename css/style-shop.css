@@ -1,0 +1,11 @@
+.hero_buscar {
+    padding-top: var(--spacing-68);
+}
+
+.hero__titulos{
+    font-family: var(--base-font);
+    font-weight: 500;
+    font-size: var(--font-medium);
+    line-height: var(--spacing-28);
+}
+

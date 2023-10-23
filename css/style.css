@@ -40,6 +40,7 @@
     --spacing-68: 6.8rem;
     --spacing-36: 3.6rem;
     --spacing-28: 2.8rem;
+    --spacing-20: 2.0rem;
     --spacing-16: 1.6rem;
     --spacing-12: 1.2rem;
     --spacing-8: 0.8rem;
@@ -155,7 +156,26 @@ p {
   color: #fd0404; /* Cambia el color al pasar el mouse */
 }
 
+/* Media query para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+  .navbar {
+    grid-template-columns: 1fr; 
+    text-align: center; 
+  }
 
+  .nav-items {
+    flex-direction: column; 
+  }
+
+  .nav-item {
+    margin-right: 0; 
+    margin-bottom: 10px; 
+  }
+  picture img {
+  width: 100%;
+  height: auto;
+}
+}
 /*Estilos card item-producto*/
 
 .BabyYoda11 {
@@ -397,3 +417,27 @@ a {
   line-height: normal;
 
 }
+/* estilos pie de pagina */
+.footer {
+  background-color: var(--dark-bg-solid);
+  padding: var(--spacing-68);
+}
+
+.footer__copy {
+  margin-top: var(--spacing-36);
+  text-align: center;
+}
+
+a.navbar__link {
+  color: #FAFAFA;
+  text-transform: uppercase;
+}
+.logo-ft {
+  width: 60%;
+}
+
+/*
+.nabvar__logo {
+  max-width: 300px;
+}
+*/
