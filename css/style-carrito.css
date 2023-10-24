@@ -185,6 +185,6 @@ p > span {
 
 @media screen and (max-width: 768px) {
   .section-principal{
-      margin: 20px 50px;
+      margin: 20px;
     }
 }
