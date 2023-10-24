@@ -93,7 +93,7 @@
       <div class="glide__track" data-glide-el="track">
         <ul class="slider__items glide__slides">
           <li class="slider__item glide__slide">
-            <!--<article class="card-item">-->
+            <article class="card-item">
               <a class="card-item__link" href="">
                 <picture class="card-item__cover">
                   <span class="card-item__tag">Nuevo</span>
@@ -109,10 +109,10 @@
                   <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
                 </div>
               </a>
-            <!--</article>-->
+            </article>
           </li>
-          <!--<li class="slider__item glide__slide">-->
-            <!--<article class="card-item">-->
+          <li class="slider__item glide__slide">
+            <article class="card-item">
               <a class="card-item__link" href="">
                 <picture class="card-item__cover">
                   <span class="card-item__tag">Nuevo</span>
@@ -128,10 +128,10 @@
                   <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
                 </div>
               </a>
-            <!--</article>-->
+            </article>
           </li>
-          <!--<li class="slider__item glide__slide">-->
-            <!--<article class="card-item">-->
+          <li class="slider__item glide__slide">
+            <article class="card-item">
               <a class="card-item__link" href="">
                 <picture class="card-item__cover">
                   <span class="card-item__tag">Nuevo</span>
@@ -147,8 +147,8 @@
                   <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
                 </div>
               </a>
-            <!--</article>-->
-          <!--</li>-->
+            </article>
+          </li>
         </ul>
       </div>
       <div class="glide__arrows" data-glide-el="controls">
@@ -171,10 +171,25 @@
     </nav>
     <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
   </footer>
-  <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+  <script src="./node_modules/@glidejs/glide/dist/glide.min.js"></script>
   <script>
-    new Glide('.glide').mount()
-  </script>
+  new Glide('.glide',
+  {
+      type: 'carousel',
+      startAt: 0,
+      perView: 3,
+      gap: 20,
+      breakpoints: {
+          991: {
+              perView: 2
+              },
+          768: {
+              perView: 1
+          }
+      }
+  }
+).mount();
+</script>
 </body>
 
 </html>
