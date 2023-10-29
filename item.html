@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
+    <title>Item</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Item | Funkoshop</title>
@@ -17,35 +17,41 @@
 
 <body>
 
-  <header class="header">
+  <header class="header"> <!-- Inicio Header -->
     <nav class="navbar container">
-      <div class="logo">
-        <a href="./index.html">
-          <img src="./img/branding/logo_light_horizontal.svg" alt="Logotipo branding funkoshop" />
-        </a>
-      </div>
-  
-      <div class="nav-items">
-        <div class="nav-item">
-          <a href="./shop.html">SHOP</a>
-        </div>
-        <div class="nav-item">
-          <i class="fa-solid fa-chevron-down"></i>
-        </div>
-        <div class="nav-item">
-          <a href="./contacto.html">CONTACTO</a>
-        </div>
-        <div class="nav-item">
-          <a href="./login.html">INGRESAR</a>
-        </div>
-        <div class="nav-item">
-          <a href="./carrito.html"><img src="./img/icons/cart-icon.svg"
-            alt="carrito" ></a>
-        </div>
-      </div>
+        <picture class="logo">
+            <a href="./index.html">
+                <img src="./img/branding/logo_light_horizontal.svg" alt="Logotipo branding funkoshop" />
+              </a>
+        </picture>
+        <ul class="navbar__menu nav-items">
+            <li class="navbar__item with-submenu nav-item">
+                <a class="navbar__link with-icon" href="./shop.html">SHOP <i class="fa-solid fa-chevron-down"></i></a>
+                <ul class="submenu">
+                    <li class="submenu__item">
+                        <a href="" class="submenu__link">Funkos</a>
+                    </li>
+                    <li class="submenu__item">
+                        <a href="" class="submenu__link">Remeras</a>
+                    </li>
+                    <li class="submenu__item">
+                        <a href="" class="submenu__link">LLaveros</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-items">
+                <a class="navbar__link nav-item" href="../contacto.html">CONTACTO</a>
+            </li class="navbar__item">
+            <li class="nav-items">
+                <a class="navbar__link nav-item" href="../login.html">LOGIN</a>
+            </li class="navbar__item">
+            <li class="navbar__item">
+                <a href="./carrito.html"><img src="./img/icons/cart-icon.svg"
+                    alt="carrito" ></a>
+            </li>
+        </ul>
     </nav>
-  </header>
-
+</header> <!--   Fin Header -->
   <div class="item-producto">
     <img class="BabyYoda11" src="img/star-wars/baby-yoda.jpeg" alt="Baby Yoda">
     <div class="contenido">

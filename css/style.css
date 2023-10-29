@@ -1,5 +1,6 @@
 /*importo pages*/
 @import url('./pages/item.css');
+@import url('./pages/login.css');
 
 
 /*estilos de normalizacion, header y footer */
@@ -132,7 +133,28 @@ p {
   padding-right: 10px;
   padding-left: 10px;
 }
+.with-submenu:hover .submenu {
+  display: block;
+}
 
+.submenu {
+  display: none;
+  width: 300px;
+  position: absolute;
+  background-color: var(--dark-bg-solid);
+  z-index: 3;
+}
+
+.submenu__link {
+  display: block;
+  padding: var(--spacing-8) var(--spacing-16);
+  font-size: var(--font-medium);
+  transition: background .3s ease-in-out;
+}
+
+.submenu__link:hover {
+  background-color: var(--primary-900);
+}
 /* Estilo para el icono del carrito */
 .fa-shop {
   font-size: 24px; /* Tamaño del icono del carrito */
