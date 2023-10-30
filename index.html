@@ -1,50 +1,50 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title></title>
-  <meta name="description" content="" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="./css/style.css" />
-  <script src="https://kit.fontawesome.com/1efe046873.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./node_modules/@glidejs/glide/dist/css/glide.core.min.css">
-  <link rel="stylesheet" href="./node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
-  <link rel="stylesheet" href="./css/index.css" />
-
-</head>
-
-<body>
-  <header class="header">
-    <nav class="navbar container">
-      <div class="logo">
-        <a href="./index.html">
-          <picture>
-            <img src="./img/branding/logo_light_horizontal.svg" alt="Logotipo branding funkoshop" />
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/style.css"/>
+  </head>
+  <body>
+    <header class="header"> <!-- Inicio Header -->
+      <nav class="navbar container">
+          <picture class="logo">
+              <a href="./index.html">
+                  <img src="./img/branding/logo_light_horizontal.svg" alt="Logotipo branding funkoshop" />
+                </a>
           </picture>
-        </a>
-      </div>
-
-      <div class="nav-items">
-        <div class="nav-item">
-          <a href="./shop.html">SHOP</a>
-        </div>
-        <div class="nav-item">
-          <i class="fa-solid fa-chevron-down"></i>
-        </div>
-        <div class="nav-item">
-          <a href="./contacto.html">CONTACTO</a>
-        </div>
-        <div class="nav-item">
-          <a href="./login.html">INGRESAR</a>
-        </div>
-        <div class="nav-item">
-          <a href="./carrito.html"><img src="./img/icons/cart-icon.svg" alt="carrito"></a>
-        </div>
-      </div>
-    </nav>
-  </header>
+          <ul class="navbar__menu nav-items">
+              <li class="navbar__item with-submenu nav-item">
+                  <a class="navbar__link with-icon" href="./shop.html">SHOP <i class="fa-solid fa-chevron-down"></i></a>
+                  <ul class="submenu">
+                      <li class="submenu__item">
+                          <a href="" class="submenu__link">Funkos</a>
+                      </li>
+                      <li class="submenu__item">
+                          <a href="" class="submenu__link">Remeras</a>
+                      </li>
+                      <li class="submenu__item">
+                          <a href="" class="submenu__link">LLaveros</a>
+                      </li>
+                  </ul>
+              </li>
+              <li class="nav-items">
+                  <a class="navbar__link nav-item" href="../contacto.html">CONTACTO</a>
+              </li class="navbar__item">
+              <li class="nav-items">
+                  <a class="navbar__link nav-item" href="../login.html">LOGIN</a>
+              </li class="navbar__item">
+              <li class="navbar__item">
+                  <a href="./carrito.html"><img src="./img/icons/cart-icon.svg"
+                      alt="carrito" ></a>
+              </li>
+          </ul>
+      </nav>
+  </header> <!--   Fin Header -->
+  
   <section class="hero">
     <article class="hero__content container">
       <h3 class="hero__title">Nuevos Ingresos</h3>
@@ -194,4 +194,30 @@
 </script>
 </body>
 
+      <footer class="footer container">
+        <!--Aqui van los datos del sitio-->
+        <section>
+          <nav>
+
+          
+        <ul class="links container" style="list-style-type: none;">
+          <li><a href="" class="link item">SHOP</a></li>
+          <li><a href="" class="link item">INGRESAR</a></li>
+          <li><a href="" class="link item">CONTACTO</a></li>
+        </ul>
+        
+        <div class="logo container">
+          <img src="" alt="" />
+        
+      </nav>
+      </section>
+      <section class="bottom-line container">
+        <p>All rights reserved 2023 - Funkoshop</p>
+      </section >
+      </footer>
+    </main>
+    <script src="" async defer></script>
+    <!-- Script de bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
 </html>
