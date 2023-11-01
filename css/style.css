@@ -4,7 +4,6 @@
 
 
 /*estilos de normalizacion, header y footer */
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap');
 :root {
     /*palette*/
@@ -12,26 +11,21 @@
     --primary-900: rgba(255, 51, 51, 0.9);
     --primary-500: rgba(255, 51, 51, 0.5);
     --primary-300: rgba(255, 51, 51, 0.3);
-
     --secondary-solid: #1D84B5;
     --secondary-900: rgba(29, 132, 181, 0.9);
     --secondary-500: rgba(29, 132, 181, 0.5);  
     --secondary-300: rgba(29, 132, 181, 0.3);  
-
     --dark-solid: #1F1F1F;
     --dark-900: rgba(31, 31, 31,0.9);
     --dark-500: rgba(31, 31, 31,0.5);
     --dark-300: rgba(31, 31, 31,0.3);
-
     --dark-bg-solid: #30343F;
     --light-bg-solid: #FAFAFA;
     --light-font-solid: #FFFFFF;
     --light-bg-container: #FAFAFF;
-
     /*Typography*/
     --base-font: 'Inter', sans-serif;
     --alternative-font:'Raleway', sans-serif;
-
     /*Font sizes*/
     --font-display: 4.6em;
     --font-jumbo: 3.8em;
@@ -39,7 +33,6 @@
     --font-medium: 1.8em;
     --font-small: 1.6em;
     --font-xsmall: 1.2em;
-
     /*Spacing*/
     --spacing-128: 12.8rem;
     --spacing-68: 6.8rem;
@@ -50,8 +43,6 @@
     --spacing-12: 1.2rem;
     --spacing-8: 0.8rem;
 }
-
-
 *, 
 *::after,
 *::before {
@@ -59,7 +50,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 html {
     font-family: var(--base-font);
     font-size: 62.5%;
@@ -71,38 +61,29 @@ a {
     font-size: 2em;
     color: inherit;
 }
-
 header, footer {
     font-family: var(--alternative-font);
     color: var(--light-font-solid);
 }
-
 ul, ol {
     list-style-type: none;
-
 }
-
 p {
     font-size: 1.8em;
 }
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
 }
-
-
 /* Estilo para el contenedor principal del header */
 .header {
   background-color: #30343F; /* Cambia el color de fondo según tu preferencia */
   padding: 20px; /* Espacio alrededor del header */
 }
-
 /* Estilo para el contenedor del logotipo */
 .logo {
   float: left; /* Logotipo en la parte izquierda */
 }
-
 /* Estilo para el contenedor de la barra de navegación */
 .navbar {
   display: grid; /* Utiliza Grid Layout */
@@ -110,19 +91,16 @@ p {
   align-items: center; /* Centra verticalmente los elementos */
   justify-content: space-between; /* Espacio entre el logo y la navegación */
 }
-
 /* Estilo para los elementos de navegación */
 .nav-items {
   display: flex; /* Hace que los elementos de navegación estén en línea */
   list-style: none; /* Quita las viñetas de la lista */
   padding: 0; /* Quita el espacio interior de la lista */
 }
-
 .nav-item {
   margin-right: 20px; /* Espacio entre los elementos de navegación */
   position: relative; /* Para posicionar el icono de flecha abajo */
 }
-
 /* Estilo para el icono de flecha */
 .fa-chevron-down {
   position: relative;
@@ -160,7 +138,6 @@ p {
   font-size: 24px; /* Tamaño del icono del carrito */
   color: #ffffff; /* Color del icono del carrito */
 }
-
 /* Estilos de texto para los elementos de navegación */
 .nav-item a {
   text-decoration: none; /* Quita subrayado de enlaces */
@@ -171,28 +148,23 @@ p {
   font-weight: 500;
   line-height: normal;
 }
-
 /* Estilo para el enlace del logotipo */
 .logo a {
   text-decoration: none; /* Quita subrayado de enlace */
 }
-
 /* Estilos para el hover (cambio al pasar el mouse) */
 .nav-item a:hover {
   color: #fd0404; /* Cambia el color al pasar el mouse */
 }
-
 /* Media query para pantallas más pequeñas */
 @media screen and (max-width: 768px) {
   .navbar {
     grid-template-columns: 1fr; 
     text-align: center; 
   }
-
   .nav-items {
     flex-direction: column; 
   }
-
   .nav-item {
     margin-right: 0; 
     margin-bottom: 10px; 
@@ -202,19 +174,15 @@ p {
   height: auto;
 }
 }
-
-
 /* estilos pie de pagina */
 .footer {
   background-color: var(--dark-bg-solid);
   padding: var(--spacing-68);
 }
-
 .footer__copy {
   margin-top: var(--spacing-36);
   text-align: center;
 }
-
 a.navbar__link {
   color: #FAFAFA;
   text-transform: uppercase;
@@ -222,7 +190,6 @@ a.navbar__link {
 .logo-ft {
   width: 60%;
 }
-
 /*
 .nabvar__logo {
   max-width: 300px;
