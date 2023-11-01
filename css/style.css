@@ -1,3 +1,8 @@
+/*importo pages*/
+@import url('./pages/item.css');
+@import url('./pages/login.css');
+
+
 /*estilos de normalizacion, header y footer */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap');
@@ -128,7 +133,28 @@ p {
   padding-right: 10px;
   padding-left: 10px;
 }
+.with-submenu:hover .submenu {
+  display: block;
+}
 
+.submenu {
+  display: none;
+  width: 300px;
+  position: absolute;
+  background-color: var(--dark-bg-solid);
+  z-index: 3;
+}
+
+.submenu__link {
+  display: block;
+  padding: var(--spacing-8) var(--spacing-16);
+  font-size: var(--font-medium);
+  transition: background .3s ease-in-out;
+}
+
+.submenu__link:hover {
+  background-color: var(--primary-900);
+}
 /* Estilo para el icono del carrito */
 .fa-shop {
   font-size: 24px; /* Tamaño del icono del carrito */
@@ -176,247 +202,8 @@ p {
   height: auto;
 }
 }
-/*Estilos card item-producto*/
 
-.BabyYoda11 {
-  width: 550px;
-  height: 400px;
-  margin-left: 95px;
-}
 
-.contenido {
-  flex-grow: 1;
-  padding-left: 20px;
-  margin-left: 125px;
-  margin-right: 110px;
-}
-
-.categoria-item {
-  color: var(--Gray-1, #333);
-  font-family: Inter;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  margin-bottom: 15px;
-}
-
-.titulo {
-  color: #111;
-  font-family: Inter;
-  font-size: 38px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  margin-bottom: 15px;
-}
-
-.descripcion {
-  color: var(--Gray-1, #333);
-  font-family: Inter;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  margin-bottom: 15px;
-}
-
-.precio {
-  color: #333;
-  font-family: Inter;
-  font-size: 38px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  margin-bottom: 15px;
-}
-
-.contador {
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px;
-}
-
-.agregar-al-carrito {
-  background: #F33;
-  width: 181px;
-  height: 37.91px;
-  flex-shrink: 0;
-  color: #FFF;
-  font-family: Inter;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  border: none;
-  cursor: pointer;
-  margin-left: 10px;
-}
-
-.ver-metodos-pago {
-  color: #1D84B5;
-  font-family: Inter;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  text-decoration-line: underline;
-}
-
-.item-producto {
-  display: flex;
-  align-items: center;
-  padding: 40px; /* Aumentamos el padding */
-  border: 1px solid #ccc;
-}
-
-/* Estilos para los botones "+" y "-" */
-.contador-btn {
-  background: #F33;
-  width: 40px; /* Aumentamos el ancho */
-  height: 40px; /* Aumentamos el alto */
-  flex-shrink: 0;
-  color: #FFF;
-  font-family: Inter;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 40px; /* Centramos verticalmente */
-  border: none;
-  cursor: pointer;
-  margin-left: 10px;
-}
-
-.contador-btn2 {
-width: 18px;
-height: 16px;
-justify-content: center;
-align-items: center;
-flex-shrink: 0;
-background: #4F4F4F;
-color: #FFF;
-margin: 2px;
-}
-
-.btn-{
-display: flex;
-flex-direction: column; /* Cambiamos la dirección del flex a columna */
-align-items: flex-end; /* Alineamos los elementos a la derecha */
-}
-/* Estilos para el input del contador */
-.contador-input {
-  width: 65px;
-  height: 50px;
-  text-align: center !important;
-  font-size: 18px;
-  border: 1px solid #ccc;
-  margin-left: 10px; /* Aumentamos la separación entre el input y los botones */
-  width: 105.467px;
-  height: 35.241px;
-  flex-shrink: 0;
-}
-
-.News {
-  width: 1218.25px;
-  height: 623px;
-  left: 110px;
-  top: 830px;
-  position: absolute;
-  display: grid;
-  grid-template-columns: repeat(3, 358.57px);
-  grid-gap: 20px; /* Espaciado uniforme entre las tarjetas */
-}
-
-.ProductosRelacionados {
-  color: #111;
-  font-family: Raleway;
-  font-size: 46px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  text-transform: uppercase;
-  margin-top: 35PX;
-  margin-left: 110px;
-}
-
-.Card {
-  width: 352px;
-  height: 512px;
-  flex-shrink: 0;
-  position: relative;
-  margin-left: 70px;
-}
-
-.Nuevo {
-  position: absolute;
-  width: 95.754px;
-  height: 30px;
-  flex-shrink: 0;
-  background: #F33;
-  color: #FFF;
-  font-family: Inter;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 30px;
-  text-align: center;
-  top: 0;
-  right: 0;
-}
-
-.BabyYoda111 {
-  width: 100%; /* La imagen ocupará todo el ancho de la tarjeta */
-  height: auto; /* La altura se ajustará automáticamente */
-  flex-shrink: 0;
-
-}
-
-.categoria-item {
-  color: var(--Gray-1, #333);
-  font-family: Inter;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-
-h2 {
-  color: #111;
-  font-family: Inter;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-
-h3 {
-  color: #333;
-  font-family: Inter;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-a {
-  color: var(--Gray-1, #333);
-  font-family: Inter;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  text-decoration: none;
-}
-
-.ver-metodos-pagob {
-  color: #1D84B5;
-  font-family: Inter;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-
-}
 /* estilos pie de pagina */
 .footer {
   background-color: var(--dark-bg-solid);

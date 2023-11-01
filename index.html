@@ -1,55 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title></title>
-  <meta name="description" content="" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="./css/style.css" />
-  <script src="https://kit.fontawesome.com/1efe046873.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./node_modules/@glidejs/glide/dist/css/glide.core.min.css">
-  <link rel="stylesheet" href="./node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
-  <link rel="stylesheet" href="./css/index.css" />
-
-</head>
-
-<body>
-  <header class="header">
-    <nav class="navbar container">
-      <div class="logo">
-        <a href="./index.html">
-          <picture>
-            <img src="./img/branding/logo_light_horizontal.svg" alt="Logotipo branding funkoshop" />
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/style.css"/>
+  </head>
+  <body>
+    <header class="header"> <!-- Inicio Header -->
+      <nav class="navbar container">
+          <picture class="logo">
+              <a href="./index.html">
+                  <img src="./img/branding/logo_light_horizontal.svg" alt="Logotipo branding funkoshop" />
+                </a>
           </picture>
-        </a>
-      </div>
-
-      <div class="nav-items">
-        <div class="nav-item">
-          <a href="./shop.html">SHOP</a>
-        </div>
-        <div class="nav-item">
-          <i class="fa-solid fa-chevron-down"></i>
-        </div>
-        <div class="nav-item">
-          <a href="./contacto.html">CONTACTO</a>
-        </div>
-        <div class="nav-item">
-          <a href="./login.html">INGRESAR</a>
-        </div>
-        <div class="nav-item">
-          <a href="./carrito.html"><img src="./img/icons/cart-icon.svg" alt="carrito"></a>
-        </div>
-      </div>
-    </nav>
-  </header>
+          <ul class="navbar__menu nav-items">
+              <li class="navbar__item with-submenu nav-item">
+                  <a class="navbar__link with-icon" href="./shop.html">SHOP <i class="fa-solid fa-chevron-down"></i></a>
+                  <ul class="submenu">
+                      <li class="submenu__item">
+                          <a href="" class="submenu__link">Funkos</a>
+                      </li>
+                      <li class="submenu__item">
+                          <a href="" class="submenu__link">Remeras</a>
+                      </li>
+                      <li class="submenu__item">
+                          <a href="" class="submenu__link">LLaveros</a>
+                      </li>
+                  </ul>
+              </li>
+              <li class="nav-items">
+                  <a class="navbar__link nav-item" href="../contacto.html">CONTACTO</a>
+              </li class="navbar__item">
+              <li class="nav-items">
+                  <a class="navbar__link nav-item" href="../login.html">LOGIN</a>
+              </li class="navbar__item">
+              <li class="navbar__item">
+                  <a href="./carrito.html"><img src="./img/icons/cart-icon.svg"
+                      alt="carrito" ></a>
+              </li>
+          </ul>
+      </nav>
+  </header> <!--   Fin Header -->
+  
   <section class="hero">
     <article class="hero__content container">
       <h3 class="hero__title">Nuevos Ingresos</h3>
       <p class="hero__text">Descubrí el próximo Funko Pop de tu colección</p>
-      <a class="hero__link" href="./pages/productos.html">SHOP</a>
+      <a class="hero__link" href="./shop.html">SHOP</a>
     </article>
   </section>
   <main class="main-container">
@@ -58,7 +58,7 @@
         <h3 class="collection__title">Star Wars & The Mandalorian</h3>
         <p class="collection__text">Disfruta de una saga que sigue<br> agregando personajes a su colección.</p>
         <p class="collection__line"></p>
-        <a class="collection__link" href="./pages/shop">VER COLECCIÓN</a>
+        <a class="collection__link" href="./shop.html">VER COLECCIÓN</a>
       </article>
       <picture class="collection__cover">
         <img src="./img/star-wars/baby-yoda-1.webp"
@@ -70,7 +70,7 @@
         <h3 class="collection__title">POKEMON INDIGO</h3>
         <p class="collection__text">Atrapa todos los que puedas y disfruta de una colección llena de amigos.</p>
         <p class="collection__line"></p>
-        <a class="collection__link" href="./pages/shop/shop">VER COLECCIÓN</a>
+        <a class="collection__link" href="./shop.html">VER COLECCIÓN</a>
       </article>
       <picture class="collection__cover">
         <img src="./img/pokemon/vulpix-1.webp" alt="Figura coleccionable Funko de Vulpix de la serie Pokemon">
@@ -93,7 +93,7 @@
       <div class="glide__track" data-glide-el="track">
         <ul class="slider__items glide__slides">
           <li class="slider__item glide__slide">
-            <!--<article class="card-item">-->
+            <article class="card-item">
               <a class="card-item__link" href="">
                 <picture class="card-item__cover">
                   <span class="card-item__tag">Nuevo</span>
@@ -109,10 +109,10 @@
                   <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
                 </div>
               </a>
-            <!--</article>-->
+            </article>
           </li>
-          <!--<li class="slider__item glide__slide">-->
-            <!--<article class="card-item">-->
+          <li class="slider__item glide__slide">
+            <article class="card-item">
               <a class="card-item__link" href="">
                 <picture class="card-item__cover">
                   <span class="card-item__tag">Nuevo</span>
@@ -128,10 +128,10 @@
                   <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
                 </div>
               </a>
-            <!--</article>-->
+            </article>
           </li>
-          <!--<li class="slider__item glide__slide">-->
-            <!--<article class="card-item">-->
+          <li class="slider__item glide__slide">
+            <article class="card-item">
               <a class="card-item__link" href="">
                 <picture class="card-item__cover">
                   <span class="card-item__tag">Nuevo</span>
@@ -147,14 +147,14 @@
                   <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
                 </div>
               </a>
-            <!--</article>-->
-          <!--</li>-->
+            </article>
+          </li>
         </ul>
       </div>
       <div class="glide__arrows" data-glide-el="controls">
-        <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><<iconify-icon
+        <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><iconify-icon
             icon="tabler:chevron-left"></iconify-icon></button>
-        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">><iconify-icon
+        <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><iconify-icon
             icon="tabler:chevron-right"></iconify-icon></button>
       </div>
     </section>
@@ -171,10 +171,53 @@
     </nav>
     <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
   </footer>
-  <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+  <!--<script src="./node_modules/@glidejs/glide/dist/glide.min.js"></script>-->
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
   <script>
-    new Glide('.glide').mount()
-  </script>
+  new Glide('.glide',
+  {
+      type: 'carousel',
+      startAt: 0,
+      perView: 3,
+      gap: 20,
+      breakpoints: {
+          991: {
+              perView: 2
+              },
+          768: {
+              perView: 1
+          }
+      }
+  }
+).mount();
+</script>
 </body>
 
+      <footer class="footer container">
+        <!--Aqui van los datos del sitio-->
+        <section>
+          <nav>
+
+          
+        <ul class="links container" style="list-style-type: none;">
+          <li><a href="" class="link item">SHOP</a></li>
+          <li><a href="" class="link item">INGRESAR</a></li>
+          <li><a href="" class="link item">CONTACTO</a></li>
+        </ul>
+        
+        <div class="logo container">
+          <img src="" alt="" />
+        
+      </nav>
+      </section>
+      <section class="bottom-line container">
+        <p>All rights reserved 2023 - Funkoshop</p>
+      </section >
+      </footer>
+    </main>
+    <script src="" async defer></script>
+    <!-- Script de bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
 </html>
