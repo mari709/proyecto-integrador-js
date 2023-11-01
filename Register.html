@@ -1,71 +1,114 @@
 <!DOCTYPE <!DOCTYPE html>
 
 <html lang="es">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-           
-        <header>
-            <!--Aqui va el logo,nombre, barra de navegacion y acceso al carrito con contador de items-->
-            <nav class="navbar container">
-                <picture class="navbar_logo">
-                    <a href="./Home.html">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/register.css"/>
+    <script src="https://kit.fontawesome.com/1efe046873.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+</head>
+  <body>
+    <header>
+        <!--Aqui va el logo,nombre, barra de navegacion y acceso al carrito con contador de items-->
+        <nav class="navbar container">
+            <picture class="navbar_logo">
+                <a href="./index.html">
+                    <img
+                        src="./img/branding/logo_light_horizontal.svg"
+                        alt="Logotipo branding funkoshop"
+                    />
+                </a>
+            </picture>
+            <ul class="navbar_menu">
+                <li class="navbar_item with-submenu">
+                    <a class="navbar_link with-icon" href="./Shop.html">SHOP <iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
+                    <ul class="submenu">
+                        <li class="submenu_item"><a href="" class="submenu_link">Funkos</a></li>
+                        <li class="submenu_item"><a href="" class="submenu_link">Remeras</a></li>
+                        <li class="submenu_item"><a href="" class="submenu_link">Llaveros</a></li>
+                    </ul>
+                </li>
+            <li class="navbar_item"><a class="navbar_link" href="">CONTACTO</a></li>
+            <li class="navbar_item"><a class="navbar_link" href="">LOGIN</a></li>
+            <li class="navbar_item">
+                <a  class="navbar_cart" href="./Carrito.html">   
+                    <img src="./img/icons/cart-icon.svg" alt="icono de carrito"/>
+                </a>
+            </li>
+        </ul>
+        </nav>
+    </header> 
+
+    <main>
+        <div class="formulario container">
+            <h1>CREA TU CUENTA</h1>
+            <h3>Completa el formulario para ser parte del mundo de los Funkos</h2>
+            <div class="formulario_planilla">
+                    <table style="margin-left: auto; margin-right: auto"> <!--Ajuste manual de posicion centrada-->
+                        <tr>
+                            <td><label for="name" >Nombre:</label></td>
+                            <td><input type="text" name="name" id="name-input" placeholder="John"></td>
+                        </tr>
+                        <tr>
+                        <td><label for="surename">Apellido:</label></td>
+                        <td><input type="text" name="surename" id="surname-input" placeholder="Doe"></td>
+                        </tr>
+                        <tr>
+                        <td><label for="email:">Email:</label></td>
+                        <td><input type="email" name="email" id="email-input" placeholder="johndoe@correo.com" ></td>
+                        </tr>
+                        <tr>
+                        <td><label for="password">Contraseña:</label></td>
+                        <td><input type="password" name="password" id="pass-input" placeholder="••••••••" ></td>
+                        </tr>
+                        <tr>
+                        <td><label for="password-repeat">Repita Contraseña:</label></td>
+                        <td><input type="password" name="password-repeat" id="pass-input" placeholder="••••••••"></td>
+                        </tr>
+                    </table>
+                
+                    <div class="formulario_send"> 
+                        <input type="button" name="register" id="register-btn" value="Registrar"> 
+                        <div>
+                            <input type="checkbox" name="termino y condiciones" id="btn_registro"> 
+                            <br>
+                            <p>Acepto los</p> 
+                            <a href="">Terminos y Condiciones</a>
+                        </div>
+                    </div>
+            </div>
+        </div>  
+
+    </main>
+    
+    <footer class="footer">
+            <nav class= "navbar container">
+                <ul class="">
+                    <li class="navbar_item"><a class="navbar_link" href=".shop.html">SHOP</a></li>
+                    <li class="navbar_item"><a class="navbar_link" href=".register.html">REGISTRARSE</a></li>
+                    <li class="navbar_item"><a class="navbar_link" href=".login.html">INGRESAR</a></li>
+                    <li class="navbar_item"><a class="navbar_link" href=".contacto.html">CONTACTO</a></li>
+                </ul>
+                <picture>
+                    <a href="./index.html">
                         <img
-                            src="./img/branding/logo_light_horizontal.svg"
+                            src="./img/branding/isotype.svg"
                             alt="Logotipo branding funkoshop"
+                            style="max-width: 200px;"
+
                         />
                     </a>
                 </picture>
-                <ul class="navbar_menu">
-                    <li class="navbar_item with-submenu">
-                        <a class="navbar_link with-icon" href="./Shop.html">SHOP <iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
-                        <ul class="submenu">
-                            <li class="submenu_item"><a href="" class="submenu_link">Funkos</a></li>
-                            <li class="submenu_item"><a href="" class="submenu_link">Remeras</a></li>
-                            <li class="submenu_item"><a href="" class="submenu_link">Llaveros</a></li>
-                        </ul>
-                    </li>
-                <li class="navbar_item"><a class="navbar_link" href="">CONTACTO</a></li>
-                <li class="navbar_item"><a class="navbar_link" href="">LOGIN</a></li>
-                <li class="navbar_item">
-                    <a  class="navbar_cart" href="./Carrito.html">   
-                        <img src="./img/icons/cart-icon.svg" alt="icono de carrito"/>
-                    </a>
-                </li>
-            </ul>
             </nav>
-        </header>  
-
-        <main>
-
-        </main>
-
-        <footer class="footer container">
-            <!--Aqui van los datos del sitio-->
-            <section>
-                <nav>         
-                    <ul class="links container" style="list-style-type: none">
-                        <li><a href="" class="link item">SHOP</a></li>
-                        <li><a href="" class="link item">INGRESAR</a></li>
-                        <li><a href="" class="link item">CONTACTO</a></li>
-                    </ul>
-            
-                    <div class="logo container">
-                        <img src="" alt="" />
-                    </nav>
-            </section>
-            <section class="bottom-line container">
-                <p>All rights reserved 2023 - Funkoshop</p>
-            </section >
-        </footer>
+            <p class="footer_copy">All rights reserved 2023 - Funkoshop &copy;</p>
+           
+    </footer>
 
 
         <script src="" async defer></script>
-    </body>
+</body>
 </html>

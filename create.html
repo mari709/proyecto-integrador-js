@@ -1,0 +1,130 @@
+<!DOCTYPE <!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/create.css"/>
+    <script src="https://kit.fontawesome.com/1efe046873.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+</head>
+  <body>
+    <header>
+        <!--Aqui va el logo,nombre, barra de navegacion y acceso al carrito con contador de items-->
+        <nav class="navbar container">
+            <picture class="navbar_logo">
+                <a href="./index.html">
+                    <img
+                        src="./img/branding/logo_light_horizontal.svg"
+                        alt="Logotipo branding funkoshop"
+                    />
+                </a>
+            </picture>
+            <ul class="navbar_menu">
+                <li class="navbar_item"><a class="navbar_link" href="">VER TIENDA</a></li>
+                <li class="navbar_item"><a class="navbar_link" href="">ADMIN</a></li>
+                <li class="navbar_item"><a class="navbar_link" href="">SALIR</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="formulario">
+            <h1>CREAR NUEVO ITEM</h1>
+            <div class="item-1">
+                <label for="Categoria" >Categoria</label>
+                <select name="categoria" id="categoria" >
+                    <option value="0" disabled selected hidden>Categoria</option>
+                    <option value="Figura">Figura</option>
+                    <option value="Funko">Funko</option>
+                    <option value="Llavero">LLavero</option>
+                </select>
+            </div>
+            <div class="item-2">
+                <label for="Licencia">Licencia</label>
+                <select name="licencia" id="licencia">
+                    <option value="0" disabled selected hidden >Licencia</option>
+                    <option value="FunkoPop">FunkoPop</option>
+                    <option value="Figma">Figma</option>
+                </select>
+            </div>
+            <div class="item-3">
+                <label for="nombre-producto" class="label_prod">Nombre del producto</label>
+                <input type="text" name="nombre-producto" id="prod_name" placeholder="Kakashi Hatake Shippuden Saga">
+            </div>
+            <div class="item-4">
+                <textarea name="Descripcion-producto" id="desc-prod" placeholder="Descripcion del producto" rows="0" cols="50">
+                </textarea>
+            </div>
+            
+            <div class="item-5">
+                <label for="SKU">SKU</label>
+                <input type="text" id="SKU" placeholder="SSK111AB001">
+            </div>
+            <div class="item-6">
+                <label for="precio">Precio</label>
+                <input type="text" id="price" placeholder="">
+            </div>
+            <div class="item-7">
+                <label for="Stock">Stock</label>
+                <input type="number" name="Stock" id="stock">
+            </div>
+            
+            <div class="item-8">
+                <label for="Descuento">Descuento</label>
+                <input type="number" name="Descuento" id="descuento" maxlength="3" step="5" style="width: 5%; ">
+                <label for="Cuotas">Cuotas</label>
+                <select name="Cuotas" id="cuotas">
+                    <option value="0">3 Cuotas sin interes</option>
+                    <option value="1">1 Cuota sin interes</option>
+                    <option value="2">3 Cuotas sin interes</option>
+                    <option value="3">6 Cuotas sin interes</option>
+                    <option value="4">12 Cuotas sin interes</option>
+                </select>
+            </div>
+            
+            <div class="item-9">
+                <label for="Imagenes">Imagenes: </label>
+                <input type="file" name="imagen" id="imagen-adjunta">
+            </div>
+            
+            <div class="item-10">
+                <input type="button" name="Agregar-prod" id="add-prod" class="button" value="Agregar Producto">
+                <input type="button" name="limpiar" id="clear" class="button" value="Limpiar">
+            </div>
+            
+        </div>
+        
+
+    </main>
+
+
+    <footer class="footer">
+        <nav class= "navbar container">
+            <ul class="">
+                <li class="navbar_item"><a class="navbar_link" href=".shop.html">SHOP</a></li>
+                <li class="navbar_item"><a class="navbar_link" href=".register.html">REGISTRARSE</a></li>
+                <li class="navbar_item"><a class="navbar_link" href=".login.html">INGRESAR</a></li>
+                <li class="navbar_item"><a class="navbar_link" href=".contacto.html">CONTACTO</a></li>
+            </ul>
+            <picture>
+                <a href="./index.html">
+                    <img
+                        src="./img/branding/isotype.svg"
+                        alt="Logotipo branding funkoshop"
+                        style="max-width: 200px;"
+                    />
+                </a>
+            </picture>
+        </nav>
+        <p class="footer_copy">All rights reserved 2023 - Funkoshop &copy;</p>
+       
+</footer>
+
+
+    <script src="" async defer></script>
+</body>
+</html>
