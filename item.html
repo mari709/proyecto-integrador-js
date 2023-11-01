@@ -5,9 +5,10 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
+    <title>Item</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Item | Funkoshop</title>
     <link rel="stylesheet" href="css/style.css"/>
 
     <script src="https://kit.fontawesome.com/1efe046873.js" crossorigin="anonymous"></script>
@@ -16,89 +17,122 @@
 
 <body>
 
-  <header class="header">
-
+  <header class="header"> <!-- Inicio Header -->
     <nav class="navbar container">
-      <div class="logo">
-        <a href="./index.html">
-          <img src="./img/branding/logo_light_horizontal.svg" alt="Logotipo branding funkoshop" />
-        </a>
-      </div>
-  
-      <div class="nav-items">
-        <div class="nav-item">
-          <a href="./shop.html">SHOP</a>
-        </div>
-        <div class="nav-item">
-          <i class="fa-solid fa-chevron-down"></i>
-        </div>
-        <div class="nav-item">
-          <a href="./contacto.html">CONTACTO</a>
-        </div>
-        <div class="nav-item">
-          <a href="./login.html">INGRESAR</a>
-        </div>
-        <div class="nav-item">
-          <a href="./carrito.html"> <i class="fa-solid fa-shop"></i></a>
-        </div>
-      </div>
+        <picture class="logo">
+            <a href="./index.html">
+                <img src="./img/branding/logo_light_horizontal.svg" alt="Logotipo branding funkoshop" />
+              </a>
+        </picture>
+        <ul class="navbar__menu nav-items">
+            <li class="navbar__item with-submenu nav-item">
+                <a class="navbar__link with-icon" href="./shop.html">SHOP <i class="fa-solid fa-chevron-down"></i></a>
+                <ul class="submenu">
+                    <li class="submenu__item">
+                        <a href="" class="submenu__link">Funkos</a>
+                    </li>
+                    <li class="submenu__item">
+                        <a href="" class="submenu__link">Remeras</a>
+                    </li>
+                    <li class="submenu__item">
+                        <a href="" class="submenu__link">LLaveros</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-items">
+                <a class="navbar__link nav-item" href="../contacto.html">CONTACTO</a>
+            </li class="navbar__item">
+            <li class="nav-items">
+                <a class="navbar__link nav-item" href="../login.html">LOGIN</a>
+            </li class="navbar__item">
+            <li class="navbar__item">
+                <a href="./carrito.html"><img src="./img/icons/cart-icon.svg"
+                    alt="carrito" ></a>
+            </li>
+        </ul>
     </nav>
-  </header>
-
-       <div class="item-producto">
-        <img class="BabyYoda11" style="width: 550px; height: 400px" src="img/star-wars/baby-yoda.jpeg" />
-        <div>
-          <h4 class="categoria-item">STAR WARS</h4>
-          <h2>BABY YODA BLUEBALL</h2>
-          <h3>Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, edición limitada.</h3>
-          <h2>$1799,99</h2>
-          <a href="">Ver métodos de pago - 3 CUOTAS SIN INTERÉS</a>
+</header> <!--   Fin Header -->
+  <div class="item-producto">
+    <img class="BabyYoda11" src="img/star-wars/baby-yoda.jpeg" alt="Baby Yoda">
+    <div class="contenido">
+        <h4 class="categoria-item">STAR WARS</h4>
+        <h2 class="titulo">BABY YODA BLUEBALL</h2>
+        <h3 class="descripcion">Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, edición limitada.</h3>
+        <h2 class="precio">$1799,99</h2>
+        <div class="contador">
+            <input class="contador-input" type="number" value="0" placeholder="0">
+            <div class="btn-">
+            <button class="contador-btn2">+</button>
+            <button class="contador-btn2">-</button>
+            </div>
+            <button class="agregar-al-carrito">Agregar al carrito</button>
         </div>
-       </div>
+        <a href="" class="ver-metodos-pago">Ver métodos de pago - 3 CUOTAS SIN INTERÉS</a>
+    </div>
+</div>
 
-  <div class="News" style="width: 1218.25px; height: 623px; left: 110px; top: 830px; position: absolute">
-    <div class="ProductosRelacionados">PRODUCTOS RELACIONADOS</div>
-    
-    <!-- Card 1 -->
-    <div class="Card1" style="width: 358.57px; height: 512px; left: 0px; top: 111px; position: absolute">
-      <img class="BabyYoda11" style="width: 350px; height: 350px" src="img/star-wars/stormtrooper.jpg" />
+<div>
+  <h1 class="ProductosRelacionados">PRODUCTOS RELACIONADOS</h1>
+</div>
+
+<div class="News">
+  <!-- Card 1 -->
+  <div class="Card">
+      <div class="Nuevo">Nuevo</div>
+      <img class="BabyYoda111" src="img/star-wars/stormtrooper.jpg" alt="Stormtrooper Lightsaber" />
       <h5 class="categoria-item">STAR WARS</h5>
       <h2>STORMTROOPER LIGHTSABER</h2>
       <h3>$1799,99</h3>
-      <a href="">Ver métodos de pago - 3 CUOTAS SIN INTERÉS</a>
-      <!-- Agrega el resto de elementos aquí -->
-    </div>
-  
-    <!-- Card 2 -->
-    <div class="Card2" style="width: 358.57px; height: 512px; left: 429.84px; top: 111px; position: absolute">
-      <img class="BabyYoda11" style="width: 350px; height: 350px" src="img/star-wars/PIDGEOTTO.jpeg" />
+      <a href="" class="ver-metodos-pagob">3 CUOTAS SIN INTERÉS</a>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="Card">
+      <div class="Nuevo">Nuevo</div>
+      <img class="BabyYoda111" src="img/star-wars/PIDGEOTTO.jpeg" alt="Pidgeotto" />
       <h5 class="categoria-item">POKEMON</h5>
       <h2>PIDGEOTTO</h2>
       <h3>$1799,99</h3>
-      <a href="">Ver métodos de pago - 3 CUOTAS SIN INTERÉS</a>
-      <!-- Agrega el resto de elementos aquí -->
-    </div>
-  
-    <!-- Card 3 -->
-    <div class="Card3" style="width: 358.57px; height: 512px; left: 859.68px; top: 111px; position: absolute">
-      <img class="BabyYoda11" style="width: 300px; height: 300px" src="img/star-wars/LUNA.jpeg" />
+      <a href="" class="ver-metodos-pagob">3 CUOTAS SIN INTERÉS</a>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="Card">
+      <div class="Nuevo">Nuevo</div>
+      <img class="BabyYoda111" src="img/star-wars/LUNA.jpeg" alt="Luna Lovegood Lion Mask" />
       <h5 class="categoria-item">HARRY POTTER</h5>
       <h2>LUNA LOVEGOOD LION MASK</h2>
       <h3>$1799,99</h3>
-      <a href="">Ver métodos de pago - 3 CUOTAS SIN INTERÉS</a>
-      <!-- Agrega el resto de elementos aquí -->
-    </div>
-  
-    <!-- Group 10 -->
-    <div class="Group10"> 
-    <div class="AllRightsReserved2023FunkoshopCopy"> <p> All rights reserved 2023 - Funkoshop </p> </div>
-      <!-- Agrega el contenido del Group 10 aquí -->
-    </div>
+      <a href="" class="ver-metodos-pagob">3 CUOTAS SIN INTERÉS</a>
   </div>
+</div>
+
+<footer class="footer">
+  <nav class="navbar container">
+      <ul class="navbar__item">
+          <li class="navbar__item">
+              <a class="navbar__link" href="./pages/shop/shop.html">SHOP</a>
+          </li>
+          <li class="navbar__item">
+              <a class="navbar__link" href="./pages/register.html">REGISTRARSE</a>
+          </li>
+          <li class="navbar__item">
+              <a class="navbar__link" href="./pages/admin/login.html">LOGIN</a>
+          </li>
+          <li class="navbar__item">
+              <a class="navbar__link" href="./pages/contact.html">CONTACTO</a>
+          </li>
+      </ul>
+      <picture>
+          <img src="./img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
+      </picture>
+  </nav>
+  <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
+</footer>
   <!-- Agrega el resto del código aquí -->
   
   <script>
-    // Puedes utilizar JavaScript para agregar interacción o manipular los elementos si es necesario
+    // JavaScript para agregar interacción o manipular los elementos si es necesario
   </script>
 
 </body>
