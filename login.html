@@ -1,84 +1,74 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Login</title>
-        <meta name="description" content="" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="css/style.css"/>
-        <script src="https://kit.fontawesome.com/1efe046873.js" crossorigin="anonymous"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+<link rel="stylesheet" type="text/css" href="formato.css">
+</head>
+
+<body>
+<div class="nav-area">
+<div style="background-color:#333;">
     
-      </head>
-
-<body class="grid-fixed">
-    <header class="header"> <!-- Inicio Header -->
-        <nav class="navbar container">
-            <picture class="logo">
-                <a href="./index.html">
-                    <img src="./img/branding/logo_light_horizontal.svg" alt="Logotipo branding funkoshop" />
-                  </a>
-            </picture>
-            <ul class="navbar__menu nav-items">
-                <li class="navbar__item with-submenu nav-item">
-                    <a class="navbar__link with-icon" href="./shop.html">Ver tienda </a>
-                </li>
-                <li class="nav-items">
-                    <a class="navbar__link nav-item" href="../proyecto-integrador-js/index.html">Admin</a>
-                </li class="navbar__item">
-                <li class="n">
-                    <a class="navbar__link nav-item" href="../.html">Salir</a>
-                </li class="navbar__item">
-            </ul>
-        </nav>
-    </header> <!--   Fin Header -->
-
-    <main id="login" class="container">
-        <h2 class="login__title">INGRESAR A MI CUENTA</h2>
-        <form class="login__form form" action="" method="post">
-            <div class="form__box--grid">
-                <label class="form__label" for="email">Email:</label>
-                <input class="form__input" type="text" name="email" id="email" placeholder="johndoe@email.com">
-            </div>
-            <div class="form__box--grid">
-                <label class="form__label" for="password">Contraseña:</label>
-                <input class="form__input" type="password" name="password" id="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
-            </div>
-            <div class="form__submission">
-                <input class="form__btn btn btn--primary btn--large" type="submit" value="Ingresar">
-                <div class="form__remember">
-                    <input type="checkbox" name="remember" id="">
-                    <label for="">Recordarme</label>
-                </div>
-            </div>
-            <a class="form__link" href="">Olvidé mi contraseña</a>
-        </form>
-</main>
-
-<!--Footer-->
-
-<footer class="footer">
-    <nav class="navbar container">
-        <ul class="navbar__item">
-            <li class="navbar__item">
-                <a class="navbar__link" href="./pages/shop/shop.html">SHOP</a>
-            </li>
-            <li class="navbar__item">
-                <a class="navbar__link" href="./pages/register.html">REGISTRARSE</a>
-            </li>
-            <li class="navbar__item">
-                <a class="navbar__link" href="./pages/admin/login.html">LOGIN</a>
-            </li>
-            <li class="navbar__item">
-                <a class="navbar__link" href="./pages/contact.html">CONTACTO</a>
-            </li>
+        <div class="logo">
+                <img src="isotype.svg" alt="Logo" width="80" height="54">
+                <a>Funkoshop</a>
+        </div>
+     <div class="nav-menu">     
+        <ul>
+            <li style="float:right"><a href="#">SALIR</a></li>
+            <li style="float:right"><a href="#">ADMIN </a></li>
+            <li style="float:right"><a href="#">VER TIENDA </a></li>
         </ul>
-        <picture>
-            <img src="./img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
-        </picture>
-    </nav>
-    <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
-  </footer>
+    </div>  
+</div>
+</div>   
+    <h1>Ingresar a mi cuenta</h1>
+ </div>
+
+    <div class="container">
+        <form>
+             <div class="form-group">
+            <label for="Email">Email: </label>
+            <input type="text" id="Email" name="Email" placeholder="johndoe@correo.com" required>
+        </div>
+
+        <div class="form-group">
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" id="contraseña" name="contraseña" placeholder="Escribe tu contraseña" required>
+        </div>
+
+            <button type="submit">Ingresar</button>
+
+            <input type="checkbox" id="Recordarme">
+            <label for="Recordarme">Recordarme </label>
+            
+            
+        </form> 
+    </div>
+<div  class="centered-link"><a href="#" id="Olvide">Olvide mi contraseña</a></div>
+
+<div>
+<footer>
+<div style="background-color:#333;">
+    
+        <div class="logo" id="Logo2">
+                <img src="isotype.svg" alt="Logo" width="80" height="54">
+          
+        </div>
+
+     <div class="nav-menu"> 
+
+        <ul id="MenuBotton">
+            <li><a href="#">SHOP</a></li>
+            <li><a href="#">REGISTARSE</a></li>
+            <li><a href="#">INGRESAR</a></li>
+            <li><a href="#">CONTACTO</a></li>
+        </ul>
+</div>  
+        <p>&copy; All rights reserved 2022- Funkoshop&copy</p>
+    </footer> </div> 
 </body>
 
 
