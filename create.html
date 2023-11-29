@@ -32,70 +32,67 @@
     </header>
 
     <main>
-        <div class="formulario">
-            <h1>CREAR NUEVO ITEM</h1>
-            <div class="item-1">
-                <label for="Categoria" >Categoria</label>
-                <select name="categoria" id="categoria" >
-                    <option value="0" disabled selected hidden>Categoria</option>
-                    <option value="Figura">Figura</option>
-                    <option value="Funko">Funko</option>
-                    <option value="Llavero">LLavero</option>
-                </select>
+        <div class="fixer">
+            <div class="formulario">
+                <h1>CREAR NUEVO ITEM</h1>
+                <div class="item-1">
+                    <label for="Categoria">Categoria:</label>
+                    <select name="categoria" id="categoria">
+                        <option value="0" disabled selected hidden> Categoria</option>
+                        <option value="Figura">Figura</option>
+                        <option value="Funko">Funko</option>
+                        <option value="Llavero">LLavero</option>
+                    </select>
+                
+                    <label for="Licencia">Licencia:</label>
+                    <select name="licencia" id="licencia">
+                        <option value="0" disabled selected hidden> Licencia</option>
+                        <option value="FunkoPop">FunkoPop</option>
+                        <option value="Figma">Figma</option>
+                    </select>
+                </div>
+                <div class="item-2">
+                    <label for="nombre-producto" class="label_prod">Nombre del producto</label>
+                    <input type="text" name="nombre-producto" id="prod_name" placeholder="Kakashi Hatake Shippuden Saga">
+                </div>
+                <div class="item-3">
+                    <textarea name="Descripcion-producto" id="desc-prod" placeholder="Descripcion del producto" rows="8" cols=100%></textarea>
+                </div>
+                
+                <div class="item-4">
+                    <label for="SKU">SKU</label>
+                    <input type="text" id="SKU" placeholder="SSK111AB001">
+                
+                    <label for="precio">Precio</label>
+                    <input type="text" id="price" placeholder="$ 0.000,00">
+                
+                    <label for="Stock">Stock</label>
+                    <input type="number" name="Stock" id="stock"  placeholder="0" style="width: 7%; text-align: center;">
+                </div>
+                
+                <div class="item-5">
+                    <label for="Descuento">Descuento</label>
+                    <input type="number" name="Descuento" id="descuento" maxlength="3" step="5" style="width: 5%; text-align: center;" placeholder="%0">
+                    <label for="Cuotas">Cuotas</label>
+                    <select name="Cuotas" id="cuotas">
+                        <option value="1">1 Cuota sin interes</option>
+                        <option value="2" selected>3 Cuotas sin interes</option>
+                        <option value="3">6 Cuotas sin interes</option>
+                        <option value="4">12 Cuotas sin interes</option>
+                    </select>
+                </div>
+                
+                <div class="item-6">
+                    <label for="Imagenes">Imagenes: </label>
+                    <input type="file" name="imagen" id="imagen-adjunta">
+                </div>
+                
+                <div class="item-7">
+                    <input type="button" name="Agregar-prod" id="add-prod" class="button" value="Agregar Producto">
+                    <input type="button" name="limpiar" id="clear" class="button" value="Limpiar">
+                </div>
+                
             </div>
-            <div class="item-2">
-                <label for="Licencia">Licencia</label>
-                <select name="licencia" id="licencia">
-                    <option value="0" disabled selected hidden >Licencia</option>
-                    <option value="FunkoPop">FunkoPop</option>
-                    <option value="Figma">Figma</option>
-                </select>
-            </div>
-            <div class="item-3">
-                <label for="nombre-producto" class="label_prod">Nombre del producto</label>
-                <input type="text" name="nombre-producto" id="prod_name" placeholder="Kakashi Hatake Shippuden Saga">
-            </div>
-            <div class="item-4">
-                <textarea name="Descripcion-producto" id="desc-prod" placeholder="Descripcion del producto" rows="0" cols="50">
-                </textarea>
-            </div>
-            
-            <div class="item-5">
-                <label for="SKU">SKU</label>
-                <input type="text" id="SKU" placeholder="SSK111AB001">
-            </div>
-            <div class="item-6">
-                <label for="precio">Precio</label>
-                <input type="text" id="price" placeholder="">
-            </div>
-            <div class="item-7">
-                <label for="Stock">Stock</label>
-                <input type="number" name="Stock" id="stock">
-            </div>
-            
-            <div class="item-8">
-                <label for="Descuento">Descuento</label>
-                <input type="number" name="Descuento" id="descuento" maxlength="3" step="5" style="width: 5%; ">
-                <label for="Cuotas">Cuotas</label>
-                <select name="Cuotas" id="cuotas">
-                    <option value="0">3 Cuotas sin interes</option>
-                    <option value="1">1 Cuota sin interes</option>
-                    <option value="2">3 Cuotas sin interes</option>
-                    <option value="3">6 Cuotas sin interes</option>
-                    <option value="4">12 Cuotas sin interes</option>
-                </select>
-            </div>
-            
-            <div class="item-9">
-                <label for="Imagenes">Imagenes: </label>
-                <input type="file" name="imagen" id="imagen-adjunta">
-            </div>
-            
-            <div class="item-10">
-                <input type="button" name="Agregar-prod" id="add-prod" class="button" value="Agregar Producto">
-                <input type="button" name="limpiar" id="clear" class="button" value="Limpiar">
-            </div>
-            
         </div>
         
 
